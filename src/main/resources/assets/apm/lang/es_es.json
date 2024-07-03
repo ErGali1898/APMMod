@@ -1,0 +1,15 @@
+{
+  "item.apm.apmium" : "APMium",
+  "item.apm.raw_apmium" : "APMium en bruto",
+  "item.apm.skol_label" : "Etiqueta Skol",
+  "item.apm.skol" : "Litrona Skol",
+  "item.apm.empty_skol" : "Litrona Skol vacía",
+  "item.apm.broken_skol" : "Litrona Skol rota",
+  "item.apm.apm_disc_vol1" : "Disco de música APM",
+  "item.apm.apm_disc_vol1.desc" : "FLAMA5111 - Locos por el perreo",
+
+  "block.apm.apmium_ore": "Mena de APMium",
+  "block.apm.deepslate_apmium_ore": "Mena de APMium de pizarra profunda",
+
+  "apm.apm_tab": "APM"
+}

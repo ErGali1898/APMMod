@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_apmium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "apm:raw_apmium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "apm:apmium_from_blasting_raw_apmium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_apmium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "apm:apmium_from_blasting_raw_apmium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

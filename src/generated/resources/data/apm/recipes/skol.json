@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "apm:skol_label"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "apm:apmium"
+    }
+  ],
+  "result": {
+    "item": "apm:skol"
+  }
+}

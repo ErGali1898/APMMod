@@ -1,0 +1,4 @@
+// 1.20.1	2024-06-24T13:50:16.6307381	Registries
+0e8a051aefd38295de5ede46da1e30ed492674fc data/apm/forge/biome_modifier/add_apmium_ore.json
+0dccaa064194c2bce5f9ec1420f89d2e1ac0c23e data/apm/worldgen/configured_feature/apmium_ore.json
+f33fb10b977a6db9f832684b4f0ce7032baaa944 data/apm/worldgen/placed_feature/apmium_ore_placed.json
