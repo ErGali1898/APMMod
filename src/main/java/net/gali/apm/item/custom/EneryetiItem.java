@@ -26,22 +26,13 @@ import java.util.*;
  */
 public class EneryetiItem extends Item {
 
-    /* ---------- Parámetros por instancia ---------- */
     private final List<MobEffectInstance> immediateEffects;
     private final List<MobEffectInstance> delayedEffects;
     private final int delayTicks;
     private final ItemStack returnItem;
 
-    /* ---------- Almacén de efectos pendientes (por jugador) ---------- */
     private static final Map<UUID, PendingEffect> PENDING = new HashMap<>();
 
-    /**
-     * @param properties        Propiedades básicas del ítem (stacks, FoodProperties…).
-     * @param immediateEffects  Efectos que se aplican nada más beber.
-     * @param delayedEffects    Efectos que se aplican tras el retardo.
-     * @param delayTicks        Retardo en ticks de los efectos secundarios (20 ticks = 1 s).
-     * @param returnItem        Ítem que se devuelve al consumir (p. ej. botella vacía).
-     */
     public EneryetiItem(Properties properties,
                         List<MobEffectInstance> immediateEffects,
                         List<MobEffectInstance> delayedEffects,
@@ -54,11 +45,9 @@ public class EneryetiItem extends Item {
         this.returnItem = returnItem;
     }
 
-    /* ---------- Animación de uso ---------- */
     @Override public int getUseDuration(ItemStack stack) { return 32; }
     @Override public UseAnim getUseAnimation(ItemStack stack) { return UseAnim.DRINK; }
 
-    /* ---------- Click derecho ---------- */
     @Override
     public InteractionResultHolder<ItemStack> use(Level level,
                                                   net.minecraft.world.entity.player.Player player,
@@ -67,23 +56,19 @@ public class EneryetiItem extends Item {
         return InteractionResultHolder.consume(player.getItemInHand(hand));
     }
 
-    /* ---------- Al terminar de beber ---------- */
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (!level.isClientSide && entity instanceof ServerPlayer player) {
 
-            /* Efectos inmediatos */
             for (MobEffectInstance effect : immediateEffects) {
                 player.addEffect(new MobEffectInstance(effect));
             }
 
-            /* Registrar efectos retrasados (si los hay) */
             if (!delayedEffects.isEmpty() && delayTicks > 0) {
                 PENDING.put(player.getUUID(),
                         new PendingEffect(delayedEffects, delayTicks));
             }
 
-            /* Reemplazar por el ítem vacío */
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);
                 player.addItem(returnItem.copy());
@@ -92,7 +77,6 @@ public class EneryetiItem extends Item {
         return stack.isEmpty() ? ItemStack.EMPTY : stack;
     }
 
-    /* ---------- Ticker global para disparar los efectos secundarios ---------- */
     @Mod.EventBusSubscriber
     public static class TickHandler {
         @SubscribeEvent
@@ -114,7 +98,6 @@ public class EneryetiItem extends Item {
         }
     }
 
-    /* ---------- Estructura auxiliar ---------- */
     private static class PendingEffect {
         final List<MobEffectInstance> effects;
         int ticksLeft;
