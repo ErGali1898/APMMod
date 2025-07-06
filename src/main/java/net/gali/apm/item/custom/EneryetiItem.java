@@ -16,14 +16,6 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.*;
 
-/**
- * Ítem base para cualquier “Eneryeti”. <br>
- * – Aplica una lista de efectos inmediatos al terminar de beber. <br>
- * – A los {@code delayTicks} aplica los efectos secundarios. <br>
- * – Devuelve siempre un {@code returnItem} (p. ej. eneryeti_vacio). <br>
- *
- * Crea tantas instancias como sabores quieras en ModItems.
- */
 public class EneryetiItem extends Item {
 
     private final List<MobEffectInstance> immediateEffects;
