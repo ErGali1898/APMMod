@@ -7,6 +7,8 @@
   "item.apm.broken_skol" : "Litrona Skol rota",
   "item.apm.apm_disc_vol1" : "Disco de música APM",
   "item.apm.apm_disc_vol1.desc" : "FLAMA5111 - Locos por el perreo",
+  "item.apm.eneryeti_vacio" : "Eneryeti vacío",
+  "item.apm.eneryeti_sandia" : "Eneryeti de sandía",
 
   "block.apm.apmium_ore": "Mena de APMium",
   "block.apm.deepslate_apmium_ore": "Mena de APMium de pizarra profunda",

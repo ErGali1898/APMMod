@@ -2,16 +2,23 @@ package net.gali.apm.item;
 
 import net.gali.apm.APMMod;
 import net.gali.apm.item.custom.CustomSwordItem;
+import net.gali.apm.item.custom.EneryetiItem;
 import net.gali.apm.item.custom.ModDrinks;
 import net.gali.apm.item.custom.ThrowableSkolItem;
 import net.gali.apm.sound.ModSounds;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 
 public class ModItems {
@@ -26,6 +33,22 @@ public class ModItems {
             () -> new CustomSwordItem(Tiers.IRON, 9,0.8F, new Item.Properties().stacksTo(1), 2));
     public static final RegistryObject<Item> APM_DISC_VOL1 = ITEMS.register("apm_disc_vol1",
             () -> new RecordItem(6, ModSounds.LPEP, new Item.Properties().stacksTo(1), 6180));
+    public static final RegistryObject<Item> ENERYETI_VACIO = ITEMS.register("eneryeti_vacio",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> ENERYETI_SANDIA = ITEMS.register("eneryeti_sandia", () ->
+            new EneryetiItem(
+                    new Item.Properties().stacksTo(1).food(
+                            new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).alwaysEat().build()
+                    ),
+                    List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0)),
+                    List.of(
+                            new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 0),
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 0)
+                    ),
+                    600,
+                    new ItemStack(ENERYETI_VACIO.get())
+            )
+    );
 
     public static void register(IEventBus event) {
         ITEMS.register(event);

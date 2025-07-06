@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.EMPTY_SKOL.get());
                         pOutput.accept(ModItems.BROKEN_SKOL.get());
                         pOutput.accept(ModItems.APM_DISC_VOL1.get());
+                        pOutput.accept(ModItems.ENERYETI_VACIO.get());
+                        pOutput.accept(ModItems.ENERYETI_SANDIA.get());
 
                     })
                     .build());
