@@ -9,6 +9,8 @@
   "item.apm.apm_disc_vol1.desc" : "FLAMA5111 - Locos por el perreo",
   "item.apm.eneryeti_vacio" : "Empty Eneryeti",
   "item.apm.eneryeti_sandia" : "Watermelon Eneryeti",
+  "item.apm.eneryeti_coco" : "Coconut Eneryeti",
+
 
   "block.apm.apmium_ore": "APMium Ore",
   "block.apm.deepslate_apmium_ore": "Deepslate APMium Ore",

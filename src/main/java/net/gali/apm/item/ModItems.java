@@ -49,6 +49,20 @@ public class ModItems {
                     new ItemStack(ENERYETI_VACIO.get())
             )
     );
+    public static final RegistryObject<Item> ENERYETI_COCO = ITEMS.register("eneryeti_coco", () ->
+            new EneryetiItem(
+                    new Item.Properties().stacksTo(1).food(
+                            new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).alwaysEat().build()
+                    ),
+                    List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0)),
+                    List.of(
+                            new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 0),
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 0)
+                    ),
+                    600,
+                    new ItemStack(ENERYETI_VACIO.get())
+            )
+    );
 
     public static void register(IEventBus event) {
         ITEMS.register(event);
