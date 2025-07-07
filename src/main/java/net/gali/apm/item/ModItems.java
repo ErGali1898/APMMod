@@ -38,7 +38,7 @@ public class ModItems {
     public static final RegistryObject<Item> ENERYETI_SANDIA = ITEMS.register("eneryeti_sandia", () ->
             new EneryetiItem(
                     new Item.Properties().stacksTo(1).food(
-                            new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).alwaysEat().build()
+                            new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
                     List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0)),
                     List.of(
@@ -52,14 +52,13 @@ public class ModItems {
     public static final RegistryObject<Item> ENERYETI_COCO = ITEMS.register("eneryeti_coco", () ->
             new EneryetiItem(
                     new Item.Properties().stacksTo(1).food(
-                            new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).alwaysEat().build()
+                            new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0)),
+                    List.of(new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 2)),
                     List.of(
-                            new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 0),
-                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 0)
+                            new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 1)
                     ),
-                    600,
+                    1500,
                     new ItemStack(ENERYETI_VACIO.get())
             )
     );
