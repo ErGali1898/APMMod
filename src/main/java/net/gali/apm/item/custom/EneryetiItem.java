@@ -32,7 +32,7 @@ public class EneryetiItem extends Item {
         super(properties);
         this.immediateEffects = immediateEffects;
         this.delayedEffects = delayedEffects;
-        this.delayTicks = delayTicks;
+        this.delayTicks = delayTicks*2;
         this.returnItem = returnItem;
     }
 
