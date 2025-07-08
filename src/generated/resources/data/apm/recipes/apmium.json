@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "apm:apmium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "apm:apmium"
+  }
+}
