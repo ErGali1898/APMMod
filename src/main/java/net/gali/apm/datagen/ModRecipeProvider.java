@@ -52,6 +52,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC , ModItems.APMIUM.get(),9)
                 .requires(ModBlocks.APMIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.APMIUM_BLOCK.get()) , has(ModBlocks.APMIUM_BLOCK.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModBlocks.ENERYETIZADOR.get())
+                .pattern("SIS")
+                .pattern("GDG")
+                .pattern("XAX")
+                .define('A',Ingredient.of(ModBlocks.APMIUM_BLOCK.get()))
+                .define('S',Ingredient.of(Items.STONE))
+                .define('G',Ingredient.of(Items.GOLD_INGOT))
+                .define('D',Ingredient.of(Items.DIAMOND))
+                .define('X',Ingredient.of(Items.DEEPSLATE))
+                .define('I',Ingredient.of(Items.IRON_INGOT))
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
