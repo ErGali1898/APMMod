@@ -29,7 +29,6 @@ public class APMMod
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-
     public APMMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
