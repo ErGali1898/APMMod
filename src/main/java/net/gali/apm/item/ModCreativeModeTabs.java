@@ -22,11 +22,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_APMIUM_ORE.get());
                         pOutput.accept(ModItems.RAW_APMIUM.get());
                         pOutput.accept(ModItems.APMIUM.get());
+                        pOutput.accept(ModBlocks.APMIUM_BLOCK.get());
                         pOutput.accept(ModItems.SKOL_LABEL.get());
                         pOutput.accept(ModItems.SKOL.get());
                         pOutput.accept(ModItems.EMPTY_SKOL.get());
                         pOutput.accept(ModItems.BROKEN_SKOL.get());
                         pOutput.accept(ModItems.APM_DISC_VOL1.get());
+                        pOutput.accept(ModItems.ENERYETI_VACIO.get());
+                        pOutput.accept(ModItems.ENERYETI_SANDIA.get());
+                        pOutput.accept(ModItems.ENERYETI_COCO.get());
 
                     })
                     .build());
