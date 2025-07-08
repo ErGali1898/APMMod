@@ -40,8 +40,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             .requires(Ingredient.of(ModItems.SKOL_LABEL.get()))
             .requires(Ingredient.of(Items.GLASS_BOTTLE))
             .requires(ModItems.APMIUM.get())
-            .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+            .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get()) ).save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModBlocks.APMIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A',ModItems.APMIUM.get())
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC , ModItems.APMIUM.get(),9)
+                .requires(ModBlocks.APMIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.APMIUM_BLOCK.get()) , has(ModBlocks.APMIUM_BLOCK.get())).save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

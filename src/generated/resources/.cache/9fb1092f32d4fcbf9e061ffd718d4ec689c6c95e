@@ -1,4 +1,6 @@
-// 1.20.1	2024-06-27T04:04:00.8256822	Recipes
+// 1.20.1	2025-07-08T14:24:25.3824271	Recipes
+3ed94ff5271735f35c10fa8ee877cf8b4453e463 data/apm/advancements/recipes/misc/apmium.json
+8168fa00b25ccaded61e066bedc76b69ada833de data/apm/advancements/recipes/misc/apmium_block.json
 33b619a96c4e9b4509cbd811e2cec11b49333eff data/apm/advancements/recipes/misc/apmium_from_blasting_apmium_ore.json
 fcb2b416711f36d8e4d408626305c6074d685d07 data/apm/advancements/recipes/misc/apmium_from_blasting_deepslate_apmium_ore.json
 2b258f276028de9783e9039e2037590fa9a790a2 data/apm/advancements/recipes/misc/apmium_from_blasting_raw_apmium.json
@@ -7,6 +9,8 @@ fcb2b416711f36d8e4d408626305c6074d685d07 data/apm/advancements/recipes/misc/apmi
 7f0ecec9018e077afe1af85de89e4b6289272af5 data/apm/advancements/recipes/misc/apmium_from_smelting_raw_apmium.json
 343ca1c5e7d2d2213e95bb198709588d12e98a10 data/apm/advancements/recipes/misc/skol.json
 8270cae5b8e2b8aaa51a9a13d666d7b782c197bd data/apm/advancements/recipes/misc/skol_label.json
+3864a70b51a1a262e6dc32ee88e089e9c8e040dc data/apm/recipes/apmium.json
+5a54005a06c9e1e660938e9f84b0312eec622e09 data/apm/recipes/apmium_block.json
 83ce24efccabedec8520a65d935af5598bac4adc data/apm/recipes/apmium_from_blasting_apmium_ore.json
 e9e2351069ca0380fa0eda2f7ea9681d1de0913c data/apm/recipes/apmium_from_blasting_deepslate_apmium_ore.json
 c9c93520e0dc19febd582de14ed5268cdf1d989d data/apm/recipes/apmium_from_blasting_raw_apmium.json

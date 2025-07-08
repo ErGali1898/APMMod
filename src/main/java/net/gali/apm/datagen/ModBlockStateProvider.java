@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.APMIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_APMIUM_ORE);
+        blockWithItem(ModBlocks.APMIUM_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

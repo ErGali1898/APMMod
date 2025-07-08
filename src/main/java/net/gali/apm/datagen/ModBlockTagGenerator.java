@@ -20,12 +20,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 ModBlocks.APMIUM_ORE.get(),
-                ModBlocks.DEEPSLATE_APMIUM_ORE.get()
+                ModBlocks.DEEPSLATE_APMIUM_ORE.get(),
+                ModBlocks.APMIUM_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
                 ModBlocks.APMIUM_ORE.get(),
-                ModBlocks.DEEPSLATE_APMIUM_ORE.get()
+                ModBlocks.DEEPSLATE_APMIUM_ORE.get(),
+                ModBlocks.APMIUM_BLOCK.get()
         );
     }
 }

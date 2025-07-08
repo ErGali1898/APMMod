@@ -24,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.add(ModBlocks.APMIUM_ORE.get(), block -> createAPMiumOreDrops(ModBlocks.APMIUM_ORE.get(), ModItems.RAW_APMIUM.get()));
         this.add(ModBlocks.DEEPSLATE_APMIUM_ORE.get(), block -> createAPMiumOreDrops(ModBlocks.DEEPSLATE_APMIUM_ORE.get(), ModItems.RAW_APMIUM.get()));
+        this.dropSelf(ModBlocks.APMIUM_BLOCK.get());
     }
 
     protected LootTable.Builder createAPMiumOreDrops(Block pBlock, Item item) {
