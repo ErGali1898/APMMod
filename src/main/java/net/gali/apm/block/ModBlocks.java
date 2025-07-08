@@ -1,6 +1,7 @@
 package net.gali.apm.block;
 
 import net.gali.apm.APMMod;
+import net.gali.apm.block.custom.EneryetizadorBlock;
 import net.gali.apm.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -28,6 +29,8 @@ public class ModBlocks{
                     UniformInt.of(2,5)));
     public static final RegistryObject<Block> APMIUM_BLOCK = registerBlock("apmium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> ENERYETIZADOR = registerBlock("eneryetizador",
+            () -> new EneryetizadorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(5.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

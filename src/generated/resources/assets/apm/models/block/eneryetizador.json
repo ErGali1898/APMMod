@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "bottom": "apm:block/eneryetizador_top",
+    "front": "apm:block/eneryetizador_front",
+    "side": "apm:block/eneryetizador_side",
+    "top": "apm:block/eneryetizador_top"
+  }
+}

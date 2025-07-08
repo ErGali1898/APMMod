@@ -21,7 +21,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 ModBlocks.APMIUM_ORE.get(),
                 ModBlocks.DEEPSLATE_APMIUM_ORE.get(),
-                ModBlocks.APMIUM_BLOCK.get()
+                ModBlocks.APMIUM_BLOCK.get(),
+                ModBlocks.ENERYETIZADOR.get()
         );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(

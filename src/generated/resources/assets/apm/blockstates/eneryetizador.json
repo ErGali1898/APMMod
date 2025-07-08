@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "apm:block/eneryetizador",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "apm:block/eneryetizador"
+    },
+    "facing=south": {
+      "model": "apm:block/eneryetizador",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "apm:block/eneryetizador",
+      "y": 270
+    }
+  }
+}
