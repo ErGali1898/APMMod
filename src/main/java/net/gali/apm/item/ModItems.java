@@ -63,6 +63,8 @@ public class ModItems {
             )
     );
 
+    public static final RegistryObject<Item> APM_COIN = ITEMS.register("apm_coin", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus event) {
         ITEMS.register(event);
     }
