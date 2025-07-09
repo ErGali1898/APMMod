@@ -2,10 +2,13 @@ package net.gali.apm;
 
 import com.mojang.logging.LogUtils;
 import net.gali.apm.block.ModBlocks;
+import net.gali.apm.block.entity.ModBlockEntities;
 import net.gali.apm.entity.ModEntities;
 import net.gali.apm.item.ModCreativeModeTabs;
 import net.gali.apm.item.ModItems;
+import net.gali.apm.screen.ModMenuTypes;
 import net.gali.apm.sound.ModSounds;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +22,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import net.gali.apm.screen.EneryetizadorScreen;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(APMMod.MOD_ID)
@@ -39,10 +43,13 @@ public class APMMod
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -70,6 +77,8 @@ public class APMMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.SKOL_PROJECTILE.get(), ThrownItemRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.ENERYETIZADOR_MENU.get(), EneryetizadorScreen::new);
         }
     }
 }
