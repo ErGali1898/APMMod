@@ -65,7 +65,7 @@ public class EneryetiItem extends Item {
                 player.addItem(returnItem.copy());
             }
         }
-        return stack.isEmpty() ? ItemStack.EMPTY : stack;
+        return stack.isEmpty() ? returnItem.copy() : stack;
     }
 
     @Mod.EventBusSubscriber

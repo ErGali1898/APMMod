@@ -1,0 +1,18 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "apm:eneryeti_vacio"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "output": {
+    "item": "apm:eneryeti_coco",
+    "count": 1
+  }
+}

@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,lit=false": {
       "model": "apm:block/eneryetizador",
       "y": 90
     },
-    "facing=north": {
+    "facing=east,lit=true": {
+      "model": "apm:block/eneryetizador_on",
+      "y": 90
+    },
+    "facing=north,lit=false": {
       "model": "apm:block/eneryetizador"
     },
-    "facing=south": {
+    "facing=north,lit=true": {
+      "model": "apm:block/eneryetizador_on"
+    },
+    "facing=south,lit=false": {
       "model": "apm:block/eneryetizador",
       "y": 180
     },
-    "facing=west": {
+    "facing=south,lit=true": {
+      "model": "apm:block/eneryetizador_on",
+      "y": 180
+    },
+    "facing=west,lit=false": {
       "model": "apm:block/eneryetizador",
+      "y": 270
+    },
+    "facing=west,lit=true": {
+      "model": "apm:block/eneryetizador_on",
       "y": 270
     }
   }

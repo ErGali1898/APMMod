@@ -2,6 +2,7 @@ package net.gali.apm.datagen;
 
 import net.gali.apm.APMMod;
 import net.gali.apm.block.ModBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -24,28 +25,49 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_APMIUM_ORE);
         blockWithItem(ModBlocks.APMIUM_BLOCK);
 
-        horizontalBlock(
+        multiBlockWithLitFront(
                 ModBlocks.ENERYETIZADOR.get(),
                 modLoc("block/eneryetizador_side"),
                 modLoc("block/eneryetizador_front"),
+                modLoc("block/eneryetizador_front_on"),
                 modLoc("block/eneryetizador_top"),
                 modLoc("block/eneryetizador_top")
         );
     }
 
-    public void horizontalBlock(Block block, ResourceLocation side, ResourceLocation front, ResourceLocation top, ResourceLocation bottom) {
-        String blockName = ForgeRegistries.BLOCKS.getKey(block).getPath();
+    public void multiBlockWithLitFront(Block block, ResourceLocation side, ResourceLocation frontOff, ResourceLocation frontOn, ResourceLocation top, ResourceLocation bottom) {
+        String name = ForgeRegistries.BLOCKS.getKey(block).getPath();
 
-        ModelFile model = models().withExistingParent(blockName, mcLoc("block/orientable"))
+        ModelFile offModel = models().withExistingParent(name, mcLoc("block/orientable"))
                 .texture("side", side)
-                .texture("front", front)
+                .texture("front", frontOff)
                 .texture("top", top)
                 .texture("bottom", bottom);
 
-        getVariantBuilder(block).forAllStates(state -> ConfiguredModel.builder()
-                .modelFile(model)
-                .rotationY(((int) state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() + 180) % 360)
-                .build());
+        ModelFile onModel = models().withExistingParent(name + "_on", mcLoc("block/orientable"))
+                .texture("side", side)
+                .texture("front", frontOn)
+                .texture("top", top)
+                .texture("bottom", bottom);
+
+        getVariantBuilder(block)
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).with(BlockStateProperties.LIT, false)
+                .modelForState().modelFile(offModel).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).with(BlockStateProperties.LIT, true)
+                .modelForState().modelFile(onModel).addModel()
+                // ... repite para EAST, SOUTH, WEST con rotaciones
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).with(BlockStateProperties.LIT, false)
+                .modelForState().modelFile(offModel).rotationY(180).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).with(BlockStateProperties.LIT, true)
+                .modelForState().modelFile(onModel).rotationY(180).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).with(BlockStateProperties.LIT, false)
+                .modelForState().modelFile(offModel).rotationY(270).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).with(BlockStateProperties.LIT, true)
+                .modelForState().modelFile(onModel).rotationY(270).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).with(BlockStateProperties.LIT, false)
+                .modelForState().modelFile(offModel).rotationY(90).addModel()
+                .partialState().with(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).with(BlockStateProperties.LIT, true)
+                .modelForState().modelFile(onModel).rotationY(90).addModel();
     }
 
 

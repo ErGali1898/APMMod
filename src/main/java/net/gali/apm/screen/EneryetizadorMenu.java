@@ -2,6 +2,7 @@ package net.gali.apm.screen;
 
 import net.gali.apm.block.ModBlocks;
 import net.gali.apm.block.entity.EneryetizadorBlockEntity;
+import net.gali.apm.screen.custom.OutputSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -35,7 +36,7 @@ public class EneryetizadorMenu extends AbstractContainerMenu {
                     this.addSlot(new SlotItemHandler(iItemHandler, 0, 17, 16));
                     this.addSlot(new SlotItemHandler(iItemHandler, 1, 48, 53));
                     this.addSlot(new SlotItemHandler(iItemHandler, 2, 69, 53));
-                    this.addSlot(new SlotItemHandler(iItemHandler, 3, 130, 35));
+                    this.addSlot(new OutputSlot(iItemHandler, 3, 130, 35));
                 }
 
                 );

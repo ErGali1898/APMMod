@@ -1,5 +1,7 @@
 package net.gali.apm.block.entity;
 
+import net.gali.apm.block.custom.EneryetizadorBlock;
+import net.gali.apm.recipe.EneryetizadorRecipe;
 import net.gali.apm.screen.EneryetizadorMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -12,6 +14,8 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,6 +26,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler ItemHandler = new ItemStackHandler(4);
@@ -121,16 +127,29 @@ public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvide
     }
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if(/*hasRecipe()*/true){
+        if(hasRecipe()){
             increaseCraftingProgress();
+            setLit(true);
             setChanged(pLevel, pPos, pState);
 
             if(hasProgressFinished()){
-                //craftItem();
+                craftItem();
                 resetProgress();
+
+                if (!hasRecipe()) {
+                    setLit(false); // solo se apaga si no hay más recetas
+                }
             }
         }else{
             resetProgress();
+            setLit(false);
+        }
+    }
+
+    public void setLit(boolean lit) {
+        BlockState state = level.getBlockState(worldPosition);
+        if (state.getValue(EneryetizadorBlock.LIT) != lit) {
+            level.setBlock(worldPosition, state.setValue(EneryetizadorBlock.LIT, lit), 3);
         }
     }
 
@@ -138,13 +157,49 @@ public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvide
         progress = 0;
     }
 
-    /*private void craftItem() {
+    private void craftItem() {
+        Optional<EneryetizadorRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
+        this.ItemHandler.extractItem(ENERYETI_SLOT, 1, false);
+        this.ItemHandler.extractItem(FLAVOUR_SLOT1, 1, false);
+        this.ItemHandler.extractItem(FLAVOUR_SLOT2, 1, false);
+
+        this.ItemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                this.ItemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
 
     }
 
     private boolean hasRecipe() {
+        Optional<EneryetizadorRecipe> recipe = getCurrentRecipe();
 
-    }*/
+        if(recipe.isEmpty()) {
+            return false;
+        }
+
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) &&
+                canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private boolean canInsertItemIntoOutputSlot(Item item) {
+        return this.ItemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
+                this.ItemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {
+        return this.ItemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.ItemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+    }
+
+    private Optional<EneryetizadorRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.ItemHandler.getSlots());
+        for (int i = 0; i < ItemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.ItemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(EneryetizadorRecipe.Type.INSTANCE, inventory, level);
+    }
 
     private boolean hasProgressFinished() {
         return progress >= maxProgress;

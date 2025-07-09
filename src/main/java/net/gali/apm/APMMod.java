@@ -6,6 +6,7 @@ import net.gali.apm.block.entity.ModBlockEntities;
 import net.gali.apm.entity.ModEntities;
 import net.gali.apm.item.ModCreativeModeTabs;
 import net.gali.apm.item.ModItems;
+import net.gali.apm.recipe.ModRecipes;
 import net.gali.apm.screen.ModMenuTypes;
 import net.gali.apm.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -41,9 +42,13 @@ public class APMMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
         ModSounds.register(modEventBus);
+
         ModEntities.register(modEventBus);
+
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
