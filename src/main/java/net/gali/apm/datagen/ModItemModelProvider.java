@@ -29,6 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERYETI_VACIO);
         simpleItem(ModItems.ENERYETI_SANDIA);
         simpleItem(ModItems.ENERYETI_COCO);
+        simpleItem(ModItems.APM_COIN);
 
         simpleItem(ModItems.APM_DISC_VOL1);
 

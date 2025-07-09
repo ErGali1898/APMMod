@@ -10,6 +10,7 @@
   "item.apm.eneryeti_vacio" : "Empty Eneryeti",
   "item.apm.eneryeti_sandia" : "Watermelon Eneryeti",
   "item.apm.eneryeti_coco" : "Coconut Eneryeti",
+  "item.apm.apm_coin": "APM coin",
 
   "block.apm.apmium_ore": "APMium Ore",
   "block.apm.deepslate_apmium_ore": "Deepslate APMium Ore",
