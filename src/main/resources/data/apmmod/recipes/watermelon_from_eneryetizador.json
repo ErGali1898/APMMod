@@ -1,0 +1,18 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "apm:eneryeti_vacio"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    }
+  ],
+  "output": {
+    "item": "apm:eneryeti_sandia",
+    "count": 1
+  }
+}

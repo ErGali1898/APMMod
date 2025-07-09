@@ -41,7 +41,7 @@ public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvide
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 200;
+    private int maxProgress = 340;
 
     public EneryetizadorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.ENERYETIZADOR_BE.get(), pPos, pBlockState);

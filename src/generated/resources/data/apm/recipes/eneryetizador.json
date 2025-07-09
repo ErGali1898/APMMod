@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "apm:apmium_block"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "X": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "GDG",
+    "XAX"
+  ],
+  "result": {
+    "item": "apm:eneryetizador"
+  },
+  "show_notification": true
+}

@@ -31,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/eneryetizador_front"),
                 modLoc("block/eneryetizador_front_on"),
                 modLoc("block/eneryetizador_top"),
-                modLoc("block/eneryetizador_top")
+                modLoc("block/eneryetizador_bottom")
         );
     }
 

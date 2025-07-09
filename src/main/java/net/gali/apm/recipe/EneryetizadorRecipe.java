@@ -25,6 +25,10 @@ public class EneryetizadorRecipe implements Recipe<SimpleContainer> {
         this.id = id;
     }
 
+    @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return inputItems;
+    }
 
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
