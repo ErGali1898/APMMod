@@ -29,6 +29,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BROKEN_SKOL.get());
                         pOutput.accept(ModItems.APM_DISC_VOL1.get());
                         pOutput.accept(ModBlocks.ENERYETIZADOR.get());
+                        pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER1.get());
+                        pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER2.get());
+                        pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER3.get());
+                        pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER4.get());
+                        pOutput.accept(ModItems.CRYPTED_NOTE.get());
                         pOutput.accept(ModItems.ENERYETI_VACIO.get());
                         pOutput.accept(ModItems.ENERYETI_SANDIA.get());
                         pOutput.accept(ModItems.ENERYETI_COCO.get());

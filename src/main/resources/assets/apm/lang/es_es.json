@@ -11,6 +11,10 @@
   "item.apm.eneryeti_sandia" : "Eneryeti de sandía",
   "item.apm.eneryeti_coco" : "Eneryeti de coco",
   "item.apm.apm_coin": "Peseta APM",
+  "item.apm.eneryeti_compound_tier1": "Compuesto de Eneryeti Nivel 1",
+  "item.apm.eneryeti_compound_tier2": "Compuesto de Eneryeti Nivel 2",
+  "item.apm.eneryeti_compound_tier3": "Compuesto de Eneryeti Nivel 3",
+  "item.apm.eneryeti_compound_tier4": "Compuesto de Eneryeti Nivel 4",
 
   "block.apm.apmium_ore": "Mena de APMium",
   "block.apm.deepslate_apmium_ore": "Mena de APMium de pizarra profunda",

@@ -11,6 +11,10 @@
   "item.apm.eneryeti_sandia" : "Watermelon Eneryeti",
   "item.apm.eneryeti_coco" : "Coconut Eneryeti",
   "item.apm.apm_coin": "APM Coin",
+  "item.apm.eneryeti_compound_tier1": "Eneryeti Compound Tier 1",
+  "item.apm.eneryeti_compound_tier2": "Eneryeti Compound Tier 2",
+  "item.apm.eneryeti_compound_tier3": "Eneryeti Compound Tier 3",
+  "item.apm.eneryeti_compound_tier4": "Eneryeti Compound Tier 4",
 
   "block.apm.apmium_ore": "APMium Ore",
   "block.apm.deepslate_apmium_ore": "Deepslate APMium Ore",

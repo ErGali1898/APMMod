@@ -57,8 +57,11 @@ public class ModItems {
             )
     );
 
-    public static final RegistryObject<Item> APM_COIN = ITEMS.register("apm_coin",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> APM_COIN = ITEMS.register("apm_coin", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER1 = ITEMS.register("eneryeti_compound_tier1", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER2 = ITEMS.register("eneryeti_compound_tier2", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER3 = ITEMS.register("eneryeti_compound_tier3", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER4 = ITEMS.register("eneryeti_compound_tier4", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRYPTED_NOTE = ITEMS.register("crypted_note",
             () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1),
                     "No se entiende nada de lo que pone aqui",

@@ -26,6 +26,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SKOL);
         simpleItem(ModItems.EMPTY_SKOL);
         simpleItem(ModItems.BROKEN_SKOL);
+        simpleItem(ModItems.ENERYETI_COMPOUND_TIER1);
+        simpleItem(ModItems.ENERYETI_COMPOUND_TIER2);
+        simpleItem(ModItems.ENERYETI_COMPOUND_TIER3);
+        simpleItem(ModItems.ENERYETI_COMPOUND_TIER4);
+        simpleItem(ModItems.CRYPTED_NOTE);
         simpleItem(ModItems.ENERYETI_VACIO);
         simpleItem(ModItems.ENERYETI_SANDIA);
         simpleItem(ModItems.ENERYETI_COCO);
