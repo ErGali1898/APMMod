@@ -39,10 +39,10 @@ authors="Pabli, Gali" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''MOD HECHO POR Y PARA SUBNORMALES''
+description='''MOD HECHO POR Y PARA SUBNORMALES'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.${mod_id}]] #optional
-    # the modid of the dependency
+# the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
