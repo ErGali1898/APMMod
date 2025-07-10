@@ -9,6 +9,7 @@ import net.gali.apm.item.ModItems;
 import net.gali.apm.recipe.ModRecipes;
 import net.gali.apm.screen.ModMenuTypes;
 import net.gali.apm.sound.ModSounds;
+import net.gali.apm.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -45,6 +46,7 @@ public class APMMod
 
         ModSounds.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
         ModEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
