@@ -49,9 +49,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A',ModItems.APMIUM.get())
                 .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A',ModItems.DRAGON_FUSED_APMIUM.get())
+                .unlockedBy(getHasName(ModItems.DRAGON_FUSED_APMIUM.get()), has(ModItems.DRAGON_FUSED_APMIUM.get())).save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC , ModItems.APMIUM.get(),9)
                 .requires(ModBlocks.APMIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.APMIUM_BLOCK.get()) , has(ModBlocks.APMIUM_BLOCK.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC , ModItems.DRAGON_FUSED_APMIUM.get(),1)
+                .requires(ModItems.APMIUM.get())
+                .requires(Ingredient.of(Items.DRAGON_BREATH))
+                .unlockedBy(getHasName(Items.DRAGON_BREATH) , has(Items.DRAGON_BREATH)).save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModBlocks.ENERYETIZADOR.get())
                 .pattern("SIS")

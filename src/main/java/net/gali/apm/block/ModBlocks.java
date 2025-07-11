@@ -28,7 +28,9 @@ public class ModBlocks{
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).strength(7.5f).requiresCorrectToolForDrops(),
                     UniformInt.of(2,5)));
     public static final RegistryObject<Block> APMIUM_BLOCK = registerBlock("apmium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DRAGON_FUSED_APMIUM_BLOCK = registerBlock("dragon_fused_apmium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).sound(SoundType.AMETHYST).strength(8.7f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ENERYETIZADOR = registerBlock("eneryetizador",
             () -> new EneryetizadorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(5.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

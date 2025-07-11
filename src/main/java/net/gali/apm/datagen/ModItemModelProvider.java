@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.APMIUM);
+        simpleItem(ModItems.DRAGON_FUSED_APMIUM);
         simpleItem(ModItems.RAW_APMIUM);
         simpleItem(ModItems.SKOL_LABEL);
         simpleItem(ModItems.SKOL);

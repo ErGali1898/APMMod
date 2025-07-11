@@ -1,5 +1,6 @@
 {
   "item.apm.apmium" : "APMium",
+  "item.apm.dragon_fused_apmium" : "APMium Fusionado con Dragón",
   "item.apm.raw_apmium" : "APMium en bruto",
   "item.apm.skol_label" : "Etiqueta Skol",
   "item.apm.skol" : "Litrona Skol",
@@ -19,6 +20,7 @@
   "block.apm.apmium_ore": "Mena de APMium",
   "block.apm.deepslate_apmium_ore": "Mena de APMium de pizarra profunda",
   "block.apm.apmium_block": "Bloque de APMium",
+  "block.apm.dragon_fused_apmium_block": "Bloque de APMium Fusionado con Dragón",
   "block.apm.eneryetizador" : "Eneryetizador",
 
   "entity.minecraft.villager.apm.badulaque": "Badulaque",

@@ -22,6 +22,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.APMIUM_ORE.get(),
                 ModBlocks.DEEPSLATE_APMIUM_ORE.get(),
                 ModBlocks.APMIUM_BLOCK.get(),
+                ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get(),
                 ModBlocks.ENERYETIZADOR.get()
         );
 
@@ -29,6 +30,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.APMIUM_ORE.get(),
                 ModBlocks.DEEPSLATE_APMIUM_ORE.get(),
                 ModBlocks.APMIUM_BLOCK.get()
+        );
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
+                ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get()
         );
     }
 }

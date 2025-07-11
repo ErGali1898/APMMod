@@ -19,6 +19,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, APMMod.MOD_ID);
 
     public static final RegistryObject<Item> APMIUM = ITEMS.register("apmium",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DRAGON_FUSED_APMIUM = ITEMS.register("dragon_fused_apmium",() -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> RAW_APMIUM = ITEMS.register("raw_apmium",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SKOL_LABEL = ITEMS.register("skol_label",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EMPTY_SKOL = ITEMS.register("empty_skol",() -> new ThrowableSkolItem(new Item.Properties().stacksTo(1)));
@@ -61,7 +62,7 @@ public class ModItems {
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER1 = ITEMS.register("eneryeti_compound_tier1", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER2 = ITEMS.register("eneryeti_compound_tier2", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER3 = ITEMS.register("eneryeti_compound_tier3", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER4 = ITEMS.register("eneryeti_compound_tier4", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER4 = ITEMS.register("eneryeti_compound_tier4", () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> CRYPTED_NOTE = ITEMS.register("crypted_note",
             () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1),
                     "No se entiende nada de lo que pone aqui",

@@ -24,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.APMIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_APMIUM_ORE);
         blockWithItem(ModBlocks.APMIUM_BLOCK);
+        blockWithItem(ModBlocks.DRAGON_FUSED_APMIUM_BLOCK);
 
         multiBlockWithLitFront(
                 ModBlocks.ENERYETIZADOR.get(),
