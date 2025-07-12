@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "apm:apmium_block"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "pattern": [
+    "BWB",
+    "AAA",
+    "BSB"
+  ],
+  "result": {
+    "item": "apm:spicy_eneryeti_spice"
+  },
+  "show_notification": true
+}

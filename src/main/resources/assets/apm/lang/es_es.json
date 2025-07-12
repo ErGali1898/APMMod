@@ -16,6 +16,10 @@
   "item.apm.eneryeti_compound_tier2": "Compuesto de Eneryeti Nivel 2",
   "item.apm.eneryeti_compound_tier3": "Compuesto de Eneryeti Nivel 3",
   "item.apm.eneryeti_compound_tier4": "Compuesto de Eneryeti Nivel 4",
+  "item.apm.poor_eneryeti_spice": "Especias de Eneryeti Pobre",
+  "item.apm.prepared_eneryeti_spice": "Especias de Eneryeti Preparadas",
+  "item.apm.spicy_eneryeti_spice": "Especias de Eneryeti Picantes",
+  "item.apm.endered_eneryeti_spice": "Especias de Eneryeti Enderizadas",
 
   "block.apm.apmium_ore": "Mena de APMium",
   "block.apm.deepslate_apmium_ore": "Mena de APMium de pizarra profunda",

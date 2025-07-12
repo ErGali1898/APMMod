@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER2.get());
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER3.get());
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER4.get());
+                        pOutput.accept(ModItems.POOR_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.PREPARED_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.SPICY_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.ENDERED_ENERYETI_SPICE.get());
                         pOutput.accept(ModItems.CRYPTED_NOTE.get());
                         pOutput.accept(ModItems.ENERYETI_VACIO.get());
                         pOutput.accept(ModItems.ENERYETI_SANDIA.get());

@@ -1,0 +1,18 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "apm:eneryeti_compound_tier1"
+    },
+    {
+      "item": "apm:prepared_eneryeti_spice"
+    },
+    {
+      "item": "apm:apmium_block"
+    }
+  ],
+  "output": {
+    "item": "apm:eneryeti_compound_tier2",
+    "count": 1
+  }
+}

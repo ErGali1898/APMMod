@@ -56,6 +56,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A',ModItems.DRAGON_FUSED_APMIUM.get())
                 .unlockedBy(getHasName(ModItems.DRAGON_FUSED_APMIUM.get()), has(ModItems.DRAGON_FUSED_APMIUM.get())).save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModItems.POOR_ENERYETI_SPICE.get())
+                .pattern("BBB")
+                .pattern("SAS")
+                .pattern("BBB")
+                .define('A',ModItems.APMIUM.get())
+                .define('B',Ingredient.of(Items.BONE_MEAL))
+                .define('S',Ingredient.of(Items.SUGAR))
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModItems.PREPARED_ENERYETI_SPICE.get())
+                .pattern("BSB")
+                .pattern("SAS")
+                .pattern("BSB")
+                .define('A',ModBlocks.APMIUM_BLOCK.get())
+                .define('B',ModItems.APMIUM.get())
+                .define('S',Ingredient.of(Items.SUGAR))
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModItems.SPICY_ENERYETI_SPICE.get())
+                .pattern("BWB")
+                .pattern("AAA")
+                .pattern("BSB")
+                .define('A',ModBlocks.APMIUM_BLOCK.get())
+                .define('B',Ingredient.of(Items.BLAZE_ROD))
+                .define('W',Ingredient.of(Items.WITHER_SKELETON_SKULL))
+                .define('S',Ingredient.of(Items.SUGAR))
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC , ModItems.ENDERED_ENERYETI_SPICE.get())
+                .pattern("BWB")
+                .pattern("AAA")
+                .pattern("BSB")
+                .define('A',ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get())
+                .define('B',Ingredient.of(Items.ENDER_EYE))
+                .define('W',Ingredient.of(Items.NETHER_STAR))
+                .define('S',Ingredient.of(Items.SUGAR))
+                .unlockedBy(getHasName(ModItems.APMIUM.get()), has(ModItems.APMIUM.get())).save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC , ModItems.APMIUM.get(),9)
                 .requires(ModBlocks.APMIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.APMIUM_BLOCK.get()) , has(ModBlocks.APMIUM_BLOCK.get())).save(pWriter);
