@@ -41,6 +41,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ENERYETI_VACIO.get());
                         pOutput.accept(ModItems.ENERYETI_SANDIA.get());
                         pOutput.accept(ModItems.ENERYETI_COCO.get());
+                        pOutput.accept(ModItems.ETERNAL_ECHO_ENERYETI.get());
+                        pOutput.accept(ModItems.DEVIL_CONTRACT_ENERYETI.get());
                         pOutput.accept(ModItems.APM_COIN.get());
 
                     })

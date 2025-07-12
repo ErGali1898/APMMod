@@ -37,7 +37,7 @@ public class EneryetizadorCategory implements IRecipeCategory<EneryetizadorRecip
         this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 78);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.ENERYETIZADOR.get()));
 
-        this.progressDrawable = helper.createDrawable(TEXTURE, 176, 0, 79, 42); // u=176, v=14, w=24, h=17
+        this.progressDrawable = helper.createDrawable(TEXTURE, 176, 0, 79, 41);
         this.animatedProgress = helper.createAnimatedDrawable(progressDrawable, 340, IDrawableAnimated.StartDirection.LEFT, false);
     }
 
@@ -68,10 +68,12 @@ public class EneryetizadorCategory implements IRecipeCategory<EneryetizadorRecip
     }
 
     @Override
-    public void setRecipe(IRecipeLayoutBuilder builder, EneryetizadorRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 17, 16).addIngredients(recipe.getIngredients().get(0));
-        builder.addSlot(RecipeIngredientRole.INPUT, 48, 53).addIngredients(recipe.getIngredients().get(1));
-        builder.addSlot(RecipeIngredientRole.INPUT, 69, 53).addIngredients(recipe.getIngredients().get(2));
+    public void setRecipe(IRecipeLayoutBuilder builder, EneryetizadorRecipe recipe, IFocusGroup focuses) {        builder.addSlot(RecipeIngredientRole.INPUT, 17, 8).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.INPUT, 17, 8).addIngredients(recipe.getIngredients().get(0));
+        builder.addSlot(RecipeIngredientRole.INPUT, 17, 28).addIngredients(recipe.getIngredients().get(1));
+        builder.addSlot(RecipeIngredientRole.INPUT, 36, 53).addIngredients(recipe.getIngredients().get(2));
+        builder.addSlot(RecipeIngredientRole.INPUT, 58, 56).addIngredients(recipe.getIngredients().get(3));
+        builder.addSlot(RecipeIngredientRole.INPUT, 80, 53).addIngredients(recipe.getIngredients().get(4));
 
         builder.addSlot(RecipeIngredientRole.OUTPUT, 130, 35).addItemStack(recipe.getResultItem(null));
     }

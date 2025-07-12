@@ -5,10 +5,16 @@
       "item": "apm:eneryeti_vacio"
     },
     {
-      "item": "minecraft:sugar"
+      "item": "apm:eneryeti_compound_tier1"
     },
     {
       "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:sugar"
     }
   ],
   "output": {

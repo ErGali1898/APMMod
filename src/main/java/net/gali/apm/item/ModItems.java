@@ -57,11 +57,38 @@ public class ModItems {
                     new ItemStack(ENERYETI_VACIO.get())
             )
     );
+    public static final RegistryObject<Item> ETERNAL_ECHO_ENERYETI = ITEMS.register("eternal_echo_eneryeti", () ->
+            new EneryetiItem(
+                    new Item.Properties().rarity(Rarity.EPIC).stacksTo(16).food(
+                            new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
+                    ),
+                    List.of(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000000, 3)),
+                    List.of(
+                            new MobEffectInstance(MobEffects.SATURATION, 50, 10)
+                    ),
+                    100,
+                    new ItemStack(ENERYETI_VACIO.get())
+            )
+    );
+    public static final RegistryObject<Item> DEVIL_CONTRACT_ENERYETI = ITEMS.register("devil_contract_eneryeti", () ->
+            new EneryetiItem(
+                    new Item.Properties().rarity(Rarity.EPIC).stacksTo(16).food(
+                            new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
+                    ),
+                    List.of(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 150),
+                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 1)),
+                    List.of(
+                            new MobEffectInstance(MobEffects.HARM, 100, 150)
+                    ),
+                    3600,
+                    new ItemStack(ENERYETI_VACIO.get())
+            )
+    );
 
     public static final RegistryObject<Item> APM_COIN = ITEMS.register("apm_coin", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER1 = ITEMS.register("eneryeti_compound_tier1", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER2 = ITEMS.register("eneryeti_compound_tier2", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER3 = ITEMS.register("eneryeti_compound_tier3", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER2 = ITEMS.register("eneryeti_compound_tier2", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER3 = ITEMS.register("eneryeti_compound_tier3", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER4 = ITEMS.register("eneryeti_compound_tier4", () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> POOR_ENERYETI_SPICE = ITEMS.register("poor_eneryeti_spice", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PREPARED_ENERYETI_SPICE = ITEMS.register("prepared_eneryeti_spice", () -> new Item(new Item.Properties()));

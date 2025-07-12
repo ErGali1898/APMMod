@@ -8,7 +8,13 @@
       "item": "apm:spicy_eneryeti_spice"
     },
     {
+      "item": "apm:apmium"
+    },
+    {
       "item": "apm:apmium_block"
+    },
+    {
+      "item": "apm:apmium"
     }
   ],
   "output": {
