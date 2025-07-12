@@ -8,18 +8,22 @@
   "item.apm.broken_skol" : "Broken Liter of Skol",
   "item.apm.apm_disc_vol1" : "APM Music Disc",
   "item.apm.apm_disc_vol1.desc" : "FLAMA5111 - Locos por el perreo",
+  "item.apm.apm_coin": "APM Coin",
+
   "item.apm.eneryeti_vacio" : "Empty Eneryeti",
   "item.apm.eneryeti_sandia" : "Watermelon Eneryeti",
   "item.apm.eneryeti_coco" : "Coconut Eneryeti",
-  "item.apm.apm_coin": "APM Coin",
+
   "item.apm.eneryeti_compound_tier1": "Eneryeti Compound Tier 1",
   "item.apm.eneryeti_compound_tier2": "Eneryeti Compound Tier 2",
   "item.apm.eneryeti_compound_tier3": "Eneryeti Compound Tier 3",
   "item.apm.eneryeti_compound_tier4": "Eneryeti Compound Tier 4",
+
   "item.apm.poor_eneryeti_spice": "Poor Eneryeti Spices",
   "item.apm.prepared_eneryeti_spice": "Prepared Eneryeti Spices",
   "item.apm.spicy_eneryeti_spice": "Spicy Eneryeti Spices",
   "item.apm.endered_eneryeti_spice": "Endered Eneryeti Spices",
+
 
   "block.apm.apmium_ore": "APMium Ore",
   "block.apm.deepslate_apmium_ore": "Deepslate APMium Ore",
