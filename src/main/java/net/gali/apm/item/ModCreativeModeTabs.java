@@ -74,7 +74,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BLINDNESS_FURY_ENERYETI.get());
                         pOutput.accept(ModItems.SATURARION_ENERYETI.get());
                         pOutput.accept(ModItems.APM_COIN.get());
-
                     })
                     .build());
 

@@ -439,8 +439,8 @@ public class ModItems {
     )));
     public static final RegistryObject<Item> ENERYETI_COMPOUND_TIER4 = ITEMS.register("eneryeti_compound_tier4", () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> POOR_ENERYETI_SPICE = ITEMS.register("poor_eneryeti_spice", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PREPARED_ENERYETI_SPICE = ITEMS.register("prepared_eneryeti_spice", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SPICY_ENERYETI_SPICE = ITEMS.register("spicy_eneryeti_spice", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PREPARED_ENERYETI_SPICE = ITEMS.register("prepared_eneryeti_spice", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> SPICY_ENERYETI_SPICE = ITEMS.register("spicy_eneryeti_spice", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> ENDERED_ENERYETI_SPICE = ITEMS.register("endered_eneryeti_spice", () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> CRYPTED_NOTE = ITEMS.register("crypted_note",
             () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1),
