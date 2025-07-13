@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_APMIUM.get());
                         pOutput.accept(ModItems.APMIUM.get());
                         pOutput.accept(ModBlocks.APMIUM_BLOCK.get());
+                        pOutput.accept(ModItems.DRAGON_FUSED_APMIUM.get());
+                        pOutput.accept(ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get());
                         pOutput.accept(ModItems.SKOL_LABEL.get());
                         pOutput.accept(ModItems.SKOL.get());
                         pOutput.accept(ModItems.EMPTY_SKOL.get());
@@ -54,7 +56,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ELECTRIC_ORANGE_ENERYETI.get());
                         pOutput.accept(ModItems.INFERNAL_LEMON_ENERYETI.get());
                         pOutput.accept(ModItems.ICED_TEA_ENERYETI.get());
-                        pOutput.accept(ModItems.TURBO_BERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.COCONUT_ENERYETI.get());
                         pOutput.accept(ModItems.WILD_CITRUS_ENERYETI.get());
                         pOutput.accept(ModItems.BLUE_RASPBERRY_ENERYETI.get());
                         pOutput.accept(ModItems.PRISMA_RASPBERRY_ENERYETI.get());
@@ -72,7 +74,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BLINDNESS_FURY_ENERYETI.get());
                         pOutput.accept(ModItems.SATURARION_ENERYETI.get());
                         pOutput.accept(ModItems.APM_COIN.get());
-                        pOutput.accept(ModItems.CRYPTED_NOTE.get());
 
                     })
                     .build());

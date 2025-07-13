@@ -14,7 +14,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 
-
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, APMMod.MOD_ID);
 
@@ -197,7 +196,7 @@ public class ModItems {
             )
     );
 
-    public static final RegistryObject<Item> TURBO_BERRY_ENERYETI = ITEMS.register("turbo_berry_eneryeti", () ->
+    public static final RegistryObject<Item> COCONUT_ENERYETI = ITEMS.register("coconut_eneryeti", () ->
             new EneryetiItem(
                     new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "apm:item/lemon_cactus_eneryeti"
+  }
+}

@@ -37,7 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENDERED_ENERYETI_SPICE);
         simpleItem(ModItems.CRYPTED_NOTE);
         simpleItem(ModItems.EMPTY_ENERYETI);
-        /*
+
         simpleItem(ModItems.WATERMELON_ENERYETI);
         simpleItem(ModItems.STRAWBERRY_ENERYETI);
         simpleItem(ModItems.APPLE_ENERYETI);
@@ -52,11 +52,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ELECTRIC_ORANGE_ENERYETI);
         simpleItem(ModItems.INFERNAL_LEMON_ENERYETI);
         simpleItem(ModItems.ICED_TEA_ENERYETI);
-        simpleItem(ModItems.TURBO_BERRY_ENERYETI);
+        simpleItem(ModItems.COCONUT_ENERYETI);
         simpleItem(ModItems.WILD_CITRUS_ENERYETI);
         simpleItem(ModItems.BLUE_RASPBERRY_ENERYETI);
         simpleItem(ModItems.PRISMA_RASPBERRY_ENERYETI);
-        simpleItem(ModItems.COSMIC_BERRY_ENERYETI);
+        simpleItem(ModItems.GLITCH_GRANATE_ENERYETI);
 
         simpleItem(ModItems.CRIMSON_FIRE_ENERYETI);
         simpleItem(ModItems.FRUIT_LAVA_ENERYETI);
@@ -66,10 +66,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WEIRD_BREWERY_ENERYETI);
 
         simpleItem(ModItems.ETERNAL_ECHO_ENERYETI);
-        simpleItem(ModItems.DEVIL_CONTRACT_ENERYETI);
         simpleItem(ModItems.BLINDNESS_FURY_ENERYETI);
         simpleItem(ModItems.SATURARION_ENERYETI);
-        */
+
+        simpleItem(ModItems.DEVIL_CONTRACT_ENERYETI);
 
         simpleItem(ModItems.APM_COIN);
         simpleItem(ModItems.APM_DISC_VOL1);

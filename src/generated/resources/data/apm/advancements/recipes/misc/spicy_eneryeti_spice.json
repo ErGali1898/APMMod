@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apmium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "apm:apmium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "apm:spicy_eneryeti_spice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_apmium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "apm:spicy_eneryeti_spice"
+    ]
+  },
+  "sends_telemetry_event": false
+}
