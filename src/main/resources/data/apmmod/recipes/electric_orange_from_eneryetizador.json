@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:orange_dye" },
+    { "item": "minecraft:glowstone_dust" },
+    { "item": "minecraft:glow_berries" }
+  ],
+  "output": {
+    "item": "apm:electric_orange_eneryeti",
+    "count": 1
+  }
+}

@@ -1,5 +1,6 @@
 {
   "item.apm.apmium" : "APMium",
+  "item.apm.dragon_fused_apmium" : "Dragon-Fused APMium",
   "item.apm.raw_apmium" : "Raw APMium",
   "item.apm.skol_label" : "Skol Label",
   "item.apm.skol" : "Liter of Skol",
@@ -7,18 +8,57 @@
   "item.apm.broken_skol" : "Broken Liter of Skol",
   "item.apm.apm_disc_vol1" : "APM Music Disc",
   "item.apm.apm_disc_vol1.desc" : "FLAMA5111 - Locos por el perreo",
-  "item.apm.eneryeti_vacio" : "Empty Eneryeti",
-  "item.apm.eneryeti_sandia" : "Watermelon Eneryeti",
-  "item.apm.eneryeti_coco" : "Coconut Eneryeti",
   "item.apm.apm_coin": "APM Coin",
+
+  "item.apm.empty_eneryeti" : "Empty Eneryeti",
+
+  "item.apm.watermelon_eneryeti" : "Watermelon Eneryeti",
+  "item.apm.strawberry_eneryeti" : "Strawberry Eneryeti",
+  "item.apm.apple_eneryeti" : "Apple Eneryeti",
+  "item.apm.lemon_cactus_eneryeti" : "Lemon Cactus Eneryeti",
+  "item.apm.mint_eneryeti" : "Mint Eneryeti",
+  "item.apm.sweet_pineapple_eneryeti" : "Sweet Pineapple Eneryeti",
+  "item.apm.blue_grape_eneryeti" : "Blue Grape Eneryeti",
+  "item.apm.peach_eneryeti" : "Peach Eneryeti",
+  "item.apm.wild_cherry_eneryeti" : "Wild Cherry Eneryeti",
+  "item.apm.green_kiwi_eneryeti" : "Green Kiwi Eneryeti",
+
+  "item.apm.electric_orange_eneryeti" : "Electric Orange Eneryeti",
+  "item.apm.infernal_lemon_eneryeti" : "Infernal Lemon Eneryeti",
+  "item.apm.iced_tea_eneryeti" : "Iced Tea Eneryeti",
+  "item.apm.turbo_berry_eneryeti" : "Turbo Berry Eneryeti",
+  "item.apm.wild_citrus_eneryeti" : "Wild Citrus Eneryeti",
+  "item.apm.blue_raspberry_eneryeti" : "Blue Raspberry Eneryeti",
+  "item.apm.prisma_raspberry_eneryeti" : "Prisma Raspberry Eneryeti",
+  "item.apm.glitch_granate_eneryeti" : "Glitch Granate Eneryeti",
+
+  "item.apm.crimson_fire_eneryeti" : "Crimson Fire Eneryeti",
+  "item.apm.fruit_lava_eneryeti" : "Fruit Lava Eneryeti",
+  "item.apm.savage_potion_eneryeti" : "Savage Potion Eneryeti",
+  "item.apm.magma_cream_eneryeti" : "Magma Cream Eneryeti",
+  "item.apm.abyssal_fog_eneryeti" : "Abyssal Fog Eneryeti",
+  "item.apm.weird_brewery_eneryeti" : "Weird Brewery Eneryeti",
+
+  "item.apm.eternal_echo_eneryeti" : "Eternal Echo Eneryeti",
+  "item.apm.devil_contract_eneryeti" : "Devil's Contract Eneryeti",
+  "item.apm.saturation_eneryeti" : "Saturarion Eneryeti",
+  "item.apm.blindness_fury_eneryeti" : "Blindness Fury Eneryeti",
+
   "item.apm.eneryeti_compound_tier1": "Eneryeti Compound Tier 1",
   "item.apm.eneryeti_compound_tier2": "Eneryeti Compound Tier 2",
   "item.apm.eneryeti_compound_tier3": "Eneryeti Compound Tier 3",
   "item.apm.eneryeti_compound_tier4": "Eneryeti Compound Tier 4",
 
+  "item.apm.poor_eneryeti_spice": "Poor Eneryeti Spices",
+  "item.apm.prepared_eneryeti_spice": "Prepared Eneryeti Spices",
+  "item.apm.spicy_eneryeti_spice": "Spicy Eneryeti Spices",
+  "item.apm.endered_eneryeti_spice": "Endered Eneryeti Spices",
+
+
   "block.apm.apmium_ore": "APMium Ore",
   "block.apm.deepslate_apmium_ore": "Deepslate APMium Ore",
   "block.apm.apmium_block": "APMium Block",
+  "block.apm.dragon_fused_apmium_block" : "Dragon-Fused APMium Block",
   "block.apm.eneryetizador" : "Eneryetizator",
 
   "item.apm.crypted_note": "Crypted note",

@@ -33,10 +33,44 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER2.get());
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER3.get());
                         pOutput.accept(ModItems.ENERYETI_COMPOUND_TIER4.get());
+                        pOutput.accept(ModItems.POOR_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.PREPARED_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.SPICY_ENERYETI_SPICE.get());
+                        pOutput.accept(ModItems.ENDERED_ENERYETI_SPICE.get());
                         pOutput.accept(ModItems.CRYPTED_NOTE.get());
-                        pOutput.accept(ModItems.ENERYETI_VACIO.get());
-                        pOutput.accept(ModItems.ENERYETI_SANDIA.get());
-                        pOutput.accept(ModItems.ENERYETI_COCO.get());
+                        pOutput.accept(ModItems.EMPTY_ENERYETI.get());
+
+                        pOutput.accept(ModItems.WATERMELON_ENERYETI.get());
+                        pOutput.accept(ModItems.STRAWBERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.APPLE_ENERYETI.get());
+                        pOutput.accept(ModItems.LEMON_CACTUS_ENERYETI.get());
+                        pOutput.accept(ModItems.MINT_ENERYETI.get());
+                        pOutput.accept(ModItems.SWEET_PINEAPPLE_ENERYETI.get());
+                        pOutput.accept(ModItems.BLUE_GRAPE_ENERYETI.get());
+                        pOutput.accept(ModItems.PEACH_ENERYETI.get());
+                        pOutput.accept(ModItems.WILD_CHERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.GREEN_KIWI_ENERYETI.get());
+
+                        pOutput.accept(ModItems.ELECTRIC_ORANGE_ENERYETI.get());
+                        pOutput.accept(ModItems.INFERNAL_LEMON_ENERYETI.get());
+                        pOutput.accept(ModItems.ICED_TEA_ENERYETI.get());
+                        pOutput.accept(ModItems.TURBO_BERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.WILD_CITRUS_ENERYETI.get());
+                        pOutput.accept(ModItems.BLUE_RASPBERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.PRISMA_RASPBERRY_ENERYETI.get());
+                        pOutput.accept(ModItems.GLITCH_GRANATE_ENERYETI.get());
+
+                        pOutput.accept(ModItems.CRIMSON_FIRE_ENERYETI.get());
+                        pOutput.accept(ModItems.FRUIT_LAVA_ENERYETI.get());
+                        pOutput.accept(ModItems.SAVAGE_POTION_ENERYETI.get());
+                        pOutput.accept(ModItems.MAGMA_CREAM_ENERYETI.get());
+                        pOutput.accept(ModItems.ABYSSAL_FOG_ENERYETI.get());
+                        pOutput.accept(ModItems.WEIRD_BREWERY_ENERYETI.get());
+                        pOutput.accept(ModItems.ETERNAL_ECHO_ENERYETI.get());
+
+                        pOutput.accept(ModItems.DEVIL_CONTRACT_ENERYETI.get());
+                        pOutput.accept(ModItems.BLINDNESS_FURY_ENERYETI.get());
+                        pOutput.accept(ModItems.SATURARION_ENERYETI.get());
                         pOutput.accept(ModItems.APM_COIN.get());
                         pOutput.accept(ModItems.CRYPTED_NOTE.get());
 

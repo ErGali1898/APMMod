@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:cactus" },
+    { "item": "minecraft:blaze_powder" },
+    { "item": "minecraft:sugar" }
+  ],
+  "output": {
+    "item": "apm:infernal_lemon_eneryeti",
+    "count": 1
+  }
+}

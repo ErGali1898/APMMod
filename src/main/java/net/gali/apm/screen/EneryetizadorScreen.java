@@ -38,7 +38,7 @@ public class EneryetizadorScreen extends AbstractContainerScreen<EneryetizadorMe
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(TEXTURE, x + 39, y + 11, 176, 0, menu.getScaledProgress(), 42);
+            guiGraphics.blit(TEXTURE, x + 39, y + 11, 176, 0, menu.getScaledProgress(), 41);
         }
     }
 

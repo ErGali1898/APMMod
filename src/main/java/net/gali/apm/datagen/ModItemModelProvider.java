@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.APMIUM);
+        simpleItem(ModItems.DRAGON_FUSED_APMIUM);
         simpleItem(ModItems.RAW_APMIUM);
         simpleItem(ModItems.SKOL_LABEL);
         simpleItem(ModItems.SKOL);
@@ -30,13 +31,47 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ENERYETI_COMPOUND_TIER2);
         simpleItem(ModItems.ENERYETI_COMPOUND_TIER3);
         simpleItem(ModItems.ENERYETI_COMPOUND_TIER4);
+        simpleItem(ModItems.POOR_ENERYETI_SPICE);
+        simpleItem(ModItems.PREPARED_ENERYETI_SPICE);
+        simpleItem(ModItems.SPICY_ENERYETI_SPICE);
+        simpleItem(ModItems.ENDERED_ENERYETI_SPICE);
         simpleItem(ModItems.CRYPTED_NOTE);
-        simpleItem(ModItems.ENERYETI_VACIO);
-        simpleItem(ModItems.ENERYETI_SANDIA);
-        simpleItem(ModItems.ENERYETI_COCO);
-        simpleItem(ModItems.APM_COIN);
-        simpleItem(ModItems.CRYPTED_NOTE);
+        simpleItem(ModItems.EMPTY_ENERYETI);
+        /*
+        simpleItem(ModItems.WATERMELON_ENERYETI);
+        simpleItem(ModItems.STRAWBERRY_ENERYETI);
+        simpleItem(ModItems.APPLE_ENERYETI);
+        simpleItem(ModItems.LEMON_CACTUS_ENERYETI);
+        simpleItem(ModItems.MINT_ENERYETI);
+        simpleItem(ModItems.SWEET_PINEAPPLE_ENERYETI);
+        simpleItem(ModItems.BLUE_GRAPE_ENERYETI);
+        simpleItem(ModItems.PEACH_ENERYETI);
+        simpleItem(ModItems.WILD_CHERRY_ENERYETI);
+        simpleItem(ModItems.GREEN_KIWI_ENERYETI);
 
+        simpleItem(ModItems.ELECTRIC_ORANGE_ENERYETI);
+        simpleItem(ModItems.INFERNAL_LEMON_ENERYETI);
+        simpleItem(ModItems.ICED_TEA_ENERYETI);
+        simpleItem(ModItems.TURBO_BERRY_ENERYETI);
+        simpleItem(ModItems.WILD_CITRUS_ENERYETI);
+        simpleItem(ModItems.BLUE_RASPBERRY_ENERYETI);
+        simpleItem(ModItems.PRISMA_RASPBERRY_ENERYETI);
+        simpleItem(ModItems.COSMIC_BERRY_ENERYETI);
+
+        simpleItem(ModItems.CRIMSON_FIRE_ENERYETI);
+        simpleItem(ModItems.FRUIT_LAVA_ENERYETI);
+        simpleItem(ModItems.SAVAGE_POTION_ENERYETI);
+        simpleItem(ModItems.MAGMA_CREAM_ENERYETI);
+        simpleItem(ModItems.ABYSSAL_FOG_ENERYETI);
+        simpleItem(ModItems.WEIRD_BREWERY_ENERYETI);
+
+        simpleItem(ModItems.ETERNAL_ECHO_ENERYETI);
+        simpleItem(ModItems.DEVIL_CONTRACT_ENERYETI);
+        simpleItem(ModItems.BLINDNESS_FURY_ENERYETI);
+        simpleItem(ModItems.SATURARION_ENERYETI);
+        */
+
+        simpleItem(ModItems.APM_COIN);
         simpleItem(ModItems.APM_DISC_VOL1);
 
         blockItem(ModBlocks.ENERYETIZADOR);

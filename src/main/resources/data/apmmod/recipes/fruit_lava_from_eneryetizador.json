@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier3" },
+    { "item": "minecraft:magma_cream" },
+    { "item": "minecraft:glistering_melon_slice" },
+    { "item": "minecraft:sugar" }
+  ],
+  "output": {
+    "item": "apm:fruit_lava_eneryeti",
+    "count": 1
+  }
+}

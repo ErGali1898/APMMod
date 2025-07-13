@@ -24,7 +24,7 @@ public class EneryetizadorMenu extends AbstractContainerMenu {
 
     public EneryetizadorMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.ENERYETIZADOR_MENU.get(), pContainerId);
-        checkContainerSize(inv, 4);
+        checkContainerSize(inv, 6);
         blockEntity = ((EneryetizadorBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -33,10 +33,12 @@ public class EneryetizadorMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-                    this.addSlot(new SlotItemHandler(iItemHandler, 0, 17, 16));
-                    this.addSlot(new SlotItemHandler(iItemHandler, 1, 48, 53));
-                    this.addSlot(new SlotItemHandler(iItemHandler, 2, 69, 53));
-                    this.addSlot(new OutputSlot(iItemHandler, 3, 130, 35));
+                    this.addSlot(new SlotItemHandler(iItemHandler, 0, 17, 8));
+                    this.addSlot(new SlotItemHandler(iItemHandler, 1, 17, 28));
+                    this.addSlot(new SlotItemHandler(iItemHandler, 2, 36, 53));
+                    this.addSlot(new SlotItemHandler(iItemHandler, 3, 58, 56));
+                    this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 53));
+                    this.addSlot(new OutputSlot(iItemHandler, 5, 130, 35));
                 }
 
                 );
@@ -73,7 +75,7 @@ public class EneryetizadorMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 6;  // must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);

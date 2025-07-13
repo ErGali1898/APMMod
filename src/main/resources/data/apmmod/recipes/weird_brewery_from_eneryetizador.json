@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier3" },
+    { "item": "minecraft:magma_cream" },
+    { "item": "minecraft:fermented_spider_eye" },
+    { "item": "minecraft:nether_wart" }
+  ],
+  "output": {
+    "item": "apm:weird_brewery_eneryeti",
+    "count": 1
+  }
+}

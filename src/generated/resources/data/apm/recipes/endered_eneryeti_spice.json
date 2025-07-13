@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "apm:dragon_fused_apmium_block"
+    },
+    "B": {
+      "item": "minecraft:ender_eye"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "BWB",
+    "AAA",
+    "BSB"
+  ],
+  "result": {
+    "item": "apm:endered_eneryeti_spice"
+  },
+  "show_notification": true
+}

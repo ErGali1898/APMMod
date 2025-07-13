@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "apm:apmium_block"
+    },
+    "B": {
+      "item": "apm:apmium"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "BSB",
+    "SAS",
+    "BSB"
+  ],
+  "result": {
+    "item": "apm:prepared_eneryeti_spice"
+  },
+  "show_notification": true
+}

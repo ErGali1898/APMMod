@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier1" },
+    { "item": "minecraft:apple" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:red_dye" }
+  ],
+  "output": {
+    "item": "apm:apple_eneryeti",
+    "count": 1
+  }
+}

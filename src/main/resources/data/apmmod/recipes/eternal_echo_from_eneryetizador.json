@@ -1,0 +1,24 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "apm:empty_eneryeti"
+    },
+    {
+      "item": "apm:eneryeti_compound_tier4"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "output": {
+    "item": "apm:eternal_echo_eneryeti",
+    "count": 1
+  }
+}

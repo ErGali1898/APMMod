@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:sweet_berries" },
+    { "item": "minecraft:lapis_lazuli" },
+    { "item": "minecraft:honey_bottle" }
+  ],
+  "output": {
+    "item": "apm:blue_raspberry_eneryeti",
+    "count": 1
+  }
+}

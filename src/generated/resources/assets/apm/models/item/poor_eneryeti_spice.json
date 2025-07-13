@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "apm:item/eneryeti_sandia"
+    "layer0": "apm:item/poor_eneryeti_spice"
   }
 }

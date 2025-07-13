@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "apm:apmium"
+    },
+    "B": {
+      "item": "minecraft:bone_meal"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "SAS",
+    "BBB"
+  ],
+  "result": {
+    "item": "apm:poor_eneryeti_spice"
+  },
+  "show_notification": true
+}

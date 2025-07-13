@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier3" },
+    { "item": "minecraft:soul_sand" },
+    { "item": "minecraft:glowstone_dust" },
+    { "item": "minecraft:honey_bottle" }
+  ],
+  "output": {
+    "item": "apm:abyssal_fog_eneryeti",
+    "count": 1
+  }
+}

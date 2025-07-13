@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:sweet_berries" },
+    { "item": "minecraft:prismarine_crystals" },
+    { "item": "minecraft:melon_slice" }
+  ],
+  "output": {
+    "item": "apm:prisma_raspberry_eneryeti",
+    "count": 1
+  }
+}

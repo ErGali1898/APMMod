@@ -30,12 +30,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler ItemHandler = new ItemStackHandler(4);
+    private final ItemStackHandler ItemHandler = new ItemStackHandler(6);
 
     public static final int ENERYETI_SLOT = 0;
-    public static final int FLAVOUR_SLOT1 = 1;
-    public static final int FLAVOUR_SLOT2 = 2;
-    public static final int OUTPUT_SLOT = 3;
+    public static final int COMPOUND_SLOT = 1;
+    public static final int FLAVOUR_SLOT1 = 2;
+    public static final int FLAVOUR_SLOT2 = 3;
+    public static final int FLAVOUR_SLOT3 = 4;
+    public static final int OUTPUT_SLOT = 5;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -162,8 +164,10 @@ public class EneryetizadorBlockEntity extends BlockEntity implements MenuProvide
         ItemStack result = recipe.get().getResultItem(null);
 
         this.ItemHandler.extractItem(ENERYETI_SLOT, 1, false);
+        this.ItemHandler.extractItem(COMPOUND_SLOT, 1, false);
         this.ItemHandler.extractItem(FLAVOUR_SLOT1, 1, false);
         this.ItemHandler.extractItem(FLAVOUR_SLOT2, 1, false);
+        this.ItemHandler.extractItem(FLAVOUR_SLOT3, 1, false);
 
         this.ItemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                 this.ItemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));

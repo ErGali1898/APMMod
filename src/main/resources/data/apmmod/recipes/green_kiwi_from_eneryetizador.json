@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier1" },
+    { "item": "minecraft:cactus" },
+    { "item": "minecraft:green_dye" },
+    { "item": "minecraft:sugar" }
+  ],
+  "output": {
+    "item": "apm:green_kiwi_eneryeti",
+    "count": 1
+  }
+}

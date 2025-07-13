@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.APMIUM_ORE.get(), block -> createAPMiumOreDrops(ModBlocks.APMIUM_ORE.get(), ModItems.RAW_APMIUM.get()));
         this.add(ModBlocks.DEEPSLATE_APMIUM_ORE.get(), block -> createAPMiumOreDrops(ModBlocks.DEEPSLATE_APMIUM_ORE.get(), ModItems.RAW_APMIUM.get()));
         this.dropSelf(ModBlocks.APMIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.DRAGON_FUSED_APMIUM_BLOCK.get());
         this.dropSelf(ModBlocks.ENERYETIZADOR.get());
     }
 

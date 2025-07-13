@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier3" },
+    { "item": "minecraft:blaze_powder" },
+    { "item": "minecraft:red_dye" },
+    { "item": "minecraft:magma_cream" }
+  ],
+  "output": {
+    "item": "apm:magma_cream_eneryeti",
+    "count": 1
+  }
+}

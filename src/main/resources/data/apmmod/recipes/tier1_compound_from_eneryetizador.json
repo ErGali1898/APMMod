@@ -1,0 +1,24 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "apm:poor_eneryeti_spice"
+    },
+    {
+      "item": "apm:apmium"
+    },
+    {
+      "item": "apm:apmium"
+    },
+    {
+      "item": "apm:apmium"
+    }
+  ],
+  "output": {
+    "item": "apm:eneryeti_compound_tier1",
+    "count": 1
+  }
+}

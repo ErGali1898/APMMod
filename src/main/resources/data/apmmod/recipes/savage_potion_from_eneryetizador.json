@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier3" },
+    { "item": "minecraft:nether_wart" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:glistering_melon_slice" }
+  ],
+  "output": {
+    "item": "apm:savage_potion_eneryeti",
+    "count": 1
+  }
+}
