@@ -23,7 +23,7 @@ public class ModEvents {
 
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ModItems.APM_COIN.get(), 16),
-                    new ItemStack(ModItems.ENERYETI_COCO.get(), 1), 6, 10, 0.02f));
+                    new ItemStack(ModItems.WATERMELON_ENERYETI.get(), 1), 6, 10, 0.02f));
         }
     }
 }

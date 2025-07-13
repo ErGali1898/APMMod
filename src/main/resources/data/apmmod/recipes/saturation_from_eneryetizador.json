@@ -1,0 +1,24 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    {
+      "item": "apm:eneryeti_vacio"
+    },
+    {
+      "item": "apm:eneryeti_compound_tier4"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "output": {
+    "item": "apm:saturation_eneryeti",
+    "count": 1
+  }
+}
