@@ -1,13 +1,11 @@
 package net.gali.apm.datagen;
 
-import com.sun.jna.platform.win32.Tlhelp32;
 import net.gali.apm.APMMod;
 import net.gali.apm.item.ModItems;
 import net.gali.apm.loot.AddItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
@@ -66,7 +64,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start(){
-        addInAllStructuresChests(0.05f,ModItems.CRYPTED_NOTE.get());
+        addInAllStructuresChests(0.1f,ModItems.CRYPTED_NOTE.get());
     }
 
     protected void addInAllStructuresChests(float prob , Item item) {
