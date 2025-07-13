@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ENERYETI_SANDIA.get());
                         pOutput.accept(ModItems.ENERYETI_COCO.get());
                         pOutput.accept(ModItems.APM_COIN.get());
+                        pOutput.accept(ModItems.CRYPTED_NOTE.get());
 
                     })
                     .build());

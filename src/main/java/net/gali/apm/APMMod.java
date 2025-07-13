@@ -6,6 +6,8 @@ import net.gali.apm.block.entity.ModBlockEntities;
 import net.gali.apm.entity.ModEntities;
 import net.gali.apm.item.ModCreativeModeTabs;
 import net.gali.apm.item.ModItems;
+import net.gali.apm.loot.ModLootModifiers;
+import net.gali.apm.painting.ModPaintings;
 import net.gali.apm.recipe.ModRecipes;
 import net.gali.apm.screen.ModMenuTypes;
 import net.gali.apm.sound.ModSounds;
@@ -46,6 +48,7 @@ public class APMMod
 
         ModSounds.register(modEventBus);
 
+
         ModVillagers.register(modEventBus);
         ModEntities.register(modEventBus);
 
@@ -59,6 +62,8 @@ public class APMMod
         ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
+
+        ModLootModifiers.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

@@ -22,6 +22,9 @@
   "block.apm.eneryetizador" : "Eneryetizador",
 
   "entity.minecraft.villager.apm.badulaque": "Badulaque",
+  "item.apm.crypted_note": "Nota encriptada",
 
   "apm.apm_tab": "APM"
+
+
 }

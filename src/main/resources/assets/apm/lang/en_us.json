@@ -21,6 +21,8 @@
   "block.apm.apmium_block": "APMium Block",
   "block.apm.eneryetizador" : "Eneryetizator",
 
+  "item.apm.crypted_note": "Crypted note",
+
   "entity.minecraft.villager.apm.badulaque": "Badulaque",
 
   "apm.apm_tab": "APM"

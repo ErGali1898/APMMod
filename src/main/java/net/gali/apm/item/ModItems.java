@@ -65,7 +65,7 @@ public class ModItems {
     public static final RegistryObject<Item> CRYPTED_NOTE = ITEMS.register("crypted_note",
             () -> new ShinningItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1),
                     "No se entiende nada de lo que pone aqui",
-                    "Tal vez con un desincriptador se puede hacer algo"
+                    "Tal vez con un desencriptador se pueda hacer algo"
             ));
 
     public static void register(IEventBus event) {
