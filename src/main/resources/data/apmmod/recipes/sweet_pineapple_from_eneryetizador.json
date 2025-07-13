@@ -4,11 +4,11 @@
     { "item": "apm:empty_eneryeti" },
     { "item": "apm:eneryeti_compound_tier1" },
     { "item": "minecraft:melon_slice" },
-    { "item": "minecraft:sugar" },
-    { "item": "minecraft:melon_slice" }
+    { "item": "minecraft:honey_bottle" },
+    { "item": "minecraft:yellow_dye" }
   ],
   "output": {
-    "item": "apm:watermelon_eneryeti",
+    "item": "apm:sweet_pineapple_eneryeti",
     "count": 1
   }
 }

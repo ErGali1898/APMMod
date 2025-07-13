@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:ice" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:cactus" }
+  ],
+  "output": {
+    "item": "apm:iced_tea_eneryeti",
+    "count": 1
+  }
+}

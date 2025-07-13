@@ -3,12 +3,12 @@
   "ingredients": [
     { "item": "apm:empty_eneryeti" },
     { "item": "apm:eneryeti_compound_tier1" },
-    { "item": "minecraft:melon_slice" },
-    { "item": "minecraft:sugar" },
-    { "item": "minecraft:melon_slice" }
+    { "item": "minecraft:snowball" },
+    { "item": "minecraft:cactus" },
+    { "item": "minecraft:sugar" }
   ],
   "output": {
-    "item": "apm:watermelon_eneryeti",
+    "item": "apm:mint_eneryeti",
     "count": 1
   }
 }

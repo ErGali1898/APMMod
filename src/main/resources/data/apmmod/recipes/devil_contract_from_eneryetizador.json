@@ -2,7 +2,7 @@
   "type": "apm:eneryetizador",
   "ingredients": [
     {
-      "item": "apm:eneryeti_vacio"
+      "item": "apm:empty_eneryeti"
     },
     {
       "item": "apm:eneryeti_compound_tier4"

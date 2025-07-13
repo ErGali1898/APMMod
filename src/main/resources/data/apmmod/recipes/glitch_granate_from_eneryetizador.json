@@ -1,0 +1,14 @@
+{
+  "type": "apm:eneryetizador",
+  "ingredients": [
+    { "item": "apm:empty_eneryeti" },
+    { "item": "apm:eneryeti_compound_tier2" },
+    { "item": "minecraft:sweet_berries" },
+    { "item": "minecraft:gunpowder" },
+    { "item": "minecraft:glowstone_dust" }
+  ],
+  "output": {
+    "item": "apm:glitch_granate_eneryeti",
+    "count": 1
+  }
+}
