@@ -283,10 +283,10 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 12000, 1),
-                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 2)),
+                    List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 12000, 0),
+                            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 1)),
                     List.of(
-                            new MobEffectInstance(MobEffects.WEAKNESS, 2400, 1)
+                            new MobEffectInstance(MobEffects.WEAKNESS, 2400, 0)
                     ),
                     2400,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -298,11 +298,11 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 1),
-                            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 3),
-                            new MobEffectInstance(MobEffects.JUMP, 3600, 2)),
+                    List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 0),
+                            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 2),
+                            new MobEffectInstance(MobEffects.JUMP, 3600, 1)),
                     List.of(
-                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 2)
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 1)
                     ),
                     3600,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -314,11 +314,11 @@ public class ModItems {
                             new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                                     new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                             ),
-                            List.of(new MobEffectInstance(MobEffects.DIG_SPEED, 1800, 3),
-                                    new MobEffectInstance(MobEffects.REGENERATION, 1500, 2)),
+                            List.of(new MobEffectInstance(MobEffects.DIG_SPEED, 1800, 2),
+                                    new MobEffectInstance(MobEffects.REGENERATION, 1500, 1)),
                             List.of(
-                                    new MobEffectInstance(MobEffects.CONFUSION, 400,3),
-                                    new MobEffectInstance(MobEffects.CONFUSION, 600,2)
+                                    new MobEffectInstance(MobEffects.CONFUSION, 400,2),
+                                    new MobEffectInstance(MobEffects.CONFUSION, 600,1)
                             ),
                             1800,
                             new ItemStack(EMPTY_ENERYETI.get())
@@ -330,10 +330,10 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 4),
-                            new MobEffectInstance(MobEffects.GLOWING, 1800, 1)),
+                    List.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 3),
+                            new MobEffectInstance(MobEffects.GLOWING, 1800, 0)),
                     List.of(
-                            new MobEffectInstance(MobEffects.BLINDNESS, 300,1)
+                            new MobEffectInstance(MobEffects.BLINDNESS, 300,0)
                     ),
                     1200,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -345,11 +345,11 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 3),
-                            new MobEffectInstance(MobEffects.NIGHT_VISION, 4800, 1)),
+                    List.of(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 2),
+                            new MobEffectInstance(MobEffects.NIGHT_VISION, 4800, 0)),
                     List.of(
-                            new MobEffectInstance(MobEffects.HUNGER, 600,3),
-                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400,2)
+                            new MobEffectInstance(MobEffects.HUNGER, 600,2),
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400,1)
                     ),
                     4800,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -361,11 +361,11 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.RARE).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.REGENERATION, 1200, 3),
-                            new MobEffectInstance(MobEffects.JUMP, 1500, 2)),
+                    List.of(new MobEffectInstance(MobEffects.REGENERATION, 1200, 2),
+                            new MobEffectInstance(MobEffects.JUMP, 1500, 1)),
                     List.of(
-                            new MobEffectInstance(MobEffects.HUNGER, 300,3),
-                            new MobEffectInstance(MobEffects.POISON, 200,2)
+                            new MobEffectInstance(MobEffects.HUNGER, 300,2),
+                            new MobEffectInstance(MobEffects.POISON, 200,1)
                     ),
                     800,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -393,7 +393,7 @@ public class ModItems {
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
                     List.of(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3600, 150),
-                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 1)),
+                            new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3600, 0)),
                     List.of(
                             new MobEffectInstance(MobEffects.HARM, 100, 150)
                     ),
@@ -407,10 +407,10 @@ public class ModItems {
                     new Item.Properties().rarity(Rarity.EPIC).stacksTo(16).food(
                             new FoodProperties.Builder().nutrition(4).saturationMod(1f).alwaysEat().build()
                     ),
-                    List.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 15),
-                            new MobEffectInstance(MobEffects.BLINDNESS, 6000, 1)),
+                    List.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 14),
+                            new MobEffectInstance(MobEffects.BLINDNESS, 6000, 0)),
                     List.of(
-                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 5)
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 4)
                     ),
                     6000,
                     new ItemStack(EMPTY_ENERYETI.get())
@@ -424,7 +424,7 @@ public class ModItems {
                     ),
                     List.of(new MobEffectInstance(MobEffects.SATURATION, 72000, 2)),
                     List.of(
-                            new MobEffectInstance(MobEffects.HUNGER, 1200, 3)
+                            new MobEffectInstance(MobEffects.HUNGER, 1200, 2)
                     ),
                     72000,
                     new ItemStack(EMPTY_ENERYETI.get())
