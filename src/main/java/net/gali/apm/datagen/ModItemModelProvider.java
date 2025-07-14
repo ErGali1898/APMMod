@@ -68,7 +68,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ETERNAL_ECHO_ENERYETI);
         simpleItem(ModItems.BLINDNESS_FURY_ENERYETI);
         simpleItem(ModItems.SATURARION_ENERYETI);
-
         simpleItem(ModItems.DEVIL_CONTRACT_ENERYETI);
 
         simpleItem(ModItems.APM_COIN);
